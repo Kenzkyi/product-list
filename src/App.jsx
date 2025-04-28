@@ -50,7 +50,7 @@ const App = () => {
           {
             data?.map((item,index)=>(
               <div className="app-cardHolderMain" key={index} onMouseEnter={()=>setOnHover(item?.id)} onMouseLeave={()=>setOnHover(0)}>
-            <nav>
+            <nav style={{borderColor: onHover === item?.id && updatingState?.cart?.find((items)=>items.id === item.id) ? 'hsl(14, 86%, 42%)' : 'transparent'}}>
               <img src={item?.image?.thumbnail} />
               {
                 onHover === item?.id ? <>

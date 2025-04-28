@@ -11,11 +11,20 @@
   padding-left: 95px;
   display: flex;
   justify-content: space-between;
+
+  @media screen and (max-width:768px) {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  @media screen and (max-width:480px) {
+    padding-left: 0;
+  }
 }
 .app-firstlayer{
   padding-top: 75px;
   height: max-content;
-  width: 60%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 26px;
@@ -24,6 +33,11 @@
   h2{
     font-size: 31.5px;
     color: hsl(14, 65%, 9%);
+  }
+
+  @media screen and (max-width:768px) {
+    width: 80%;
+    margin: 0 auto;
   }
 }
 .app-cardHolder{
@@ -35,7 +49,7 @@
 
   .app-cardHolderMain{
     height: 50vh;
-    width: 300px;
+    width: 240px;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
@@ -46,15 +60,16 @@
       width: 100%;
       border-radius: 10px;
       position: relative;
+      border: 2px solid transparent;
 
       aside{
         position: absolute;
-        width: 170px;
+        width: 150px;
         height: 40px;
         border: 1px solid hsl(12, 20%, 44%);
         bottom: -20px;
         border-radius: 30px;
-        left: 65px;
+        left: 45px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -62,16 +77,18 @@
         color: hsl(14, 65%, 9%);
         gap: 10px;
         cursor: pointer;
+
+        
       }
 
       section{
         position: absolute;
-        width: 170px;
+        width: 150px;
         height: 40px;
         background-color: hsl(14, 86%, 42%);
         bottom: -20px;
         border-radius: 30px;
-        left: 65px;
+        left: 45px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -134,18 +151,42 @@
         color: hsl(14, 86%, 42%);
       }
     }
+
+    @media screen and (max-width:480px) {
+      width: 90%;
+      margin: 0 auto;
+
+      nav{
+        aside,section{
+          left: 65px;
+        }
+      }
+    }
+    
   }
 }
 .app-secondLayer{
-  width: 36%;
+  width: 29%;
   min-height: 50vh;
   margin-top: 37px;
   position: fixed;
   right: 0;
+
+  @media screen and (max-width:768px) {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width:480px) {
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
+  }
 }
 .app-emptyCart{
-  height: 40vh;
-  width: 420px;
+  min-height: 40vh;
+  width: 90%;
   border-radius: 10px;
   background-color: white;
   padding: 25px;
@@ -172,7 +213,7 @@
 }
 .app-cartItems{
   min-height: 20vh;
-  width: 420px;
+  width: 90%;
   border-radius: 10px;
   background-color: white;
   padding: 25px;
@@ -276,6 +317,7 @@
     gap: 7px;
 
     p{
+      font-size: 13px;
       span{
         font-weight: 600;
       }
