@@ -1,0 +1,300 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Red Hat Text", sans-serif;
+}
+.app{
+  height: max-content;
+  width: 100%;
+  background-color: hsl(20, 50%, 98%);
+  padding-left: 95px;
+  display: flex;
+  justify-content: space-between;
+}
+.app-firstlayer{
+  padding-top: 75px;
+  height: max-content;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  background-color: hsl(20, 50%, 98%);
+
+  h2{
+    font-size: 31.5px;
+    color: hsl(14, 65%, 9%);
+  }
+}
+.app-cardHolder{
+  min-height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  .app-cardHolderMain{
+    height: 50vh;
+    width: 300px;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    nav{
+      height: 70%;
+      width: 100%;
+      border-radius: 10px;
+      position: relative;
+
+      aside{
+        position: absolute;
+        width: 170px;
+        height: 40px;
+        border: 1px solid hsl(12, 20%, 44%);
+        bottom: -20px;
+        border-radius: 30px;
+        left: 65px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: hsl(14, 65%, 9%);
+        gap: 10px;
+        cursor: pointer;
+      }
+
+      section{
+        position: absolute;
+        width: 170px;
+        height: 40px;
+        background-color: hsl(14, 86%, 42%);
+        bottom: -20px;
+        border-radius: 30px;
+        left: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .app-buttonHolder{
+          width: 87%;
+          height: 70%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          
+          p{
+            color: white;
+          }
+          
+          div{
+            cursor: pointer;
+            width: 20px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 20px;
+            border-radius: 100%;
+            border: 1px solid white;
+          }
+        }
+      }
+
+      img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        object-fit: cover;
+      }
+    }
+
+    article{
+      height: 20%;
+      width: 100%;
+      /* background-color: gray; */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      h6{
+        color: hsl(7, 20%, 60%);
+        font-weight: 500;
+        font-size: 18px;
+      }
+
+      h5{
+        font-size: 18px;
+        color: hsl(14, 65%, 9%);
+      }
+
+      h4{
+        font-size: 20px;
+        color: hsl(14, 86%, 42%);
+      }
+    }
+  }
+}
+.app-secondLayer{
+  width: 36%;
+  min-height: 50vh;
+  margin-top: 37px;
+  position: fixed;
+  right: 0;
+}
+.app-emptyCart{
+  height: 40vh;
+  width: 420px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3{
+    color: hsl(14, 86%, 42%);
+    font-size: 22px;
+    width: 100%;
+  }
+
+  nav{
+    height: max-content;
+    width: max-content;
+    margin-top: 40px;
+  }
+
+  p{
+    margin-top: 15px;
+    color: hsl(12, 20%, 44%);
+  }
+}
+.app-cartItems{
+  min-height: 20vh;
+  width: 420px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+
+  h3{
+    color: hsl(14, 86%, 42%);
+    font-size: 22px;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  main{
+    min-height: 7vh;
+    width: 100%;
+    margin-top: 25px;
+
+    article{
+      height: 10vh;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid gainsboro;
+
+      section{
+        height: 75%;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        h4{
+          font-size: 15px;
+          font-weight: 600;
+        }
+        
+        nav{
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          
+          h5{
+            color: hsl(14, 86%, 42%);
+            font-size: 17px;
+          }
+
+          p{
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            color: hsl(7, 20%, 60%);
+
+            span{
+              color: hsl(12, 20%, 44%);
+              margin-left: 7px;
+            }
+          }
+        }
+        
+      }
+
+      aside{
+        height: 20px;
+        width: 20px;
+        border: 1px solid hsl(7, 20%, 60%);
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  .app-orderTotal{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h6{
+      font-size: 25px;
+    }
+
+    p{
+      color: hsl(12, 20%, 44%);
+    }
+  }
+
+  .app-carbonNeutral{
+    height: 6vh;
+    width: 100%;
+    background-color:  hsl(13, 31%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    p{
+      span{
+        font-weight: 600;
+      }
+    }
+  }
+  button{
+    border-radius: 30px;
+    height: 6.5vh;
+    width: 100%;
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: hsl(14, 86%, 42%);
+
+  }
+}
