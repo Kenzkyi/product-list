@@ -39,6 +39,10 @@
     width: 80%;
     margin: 0 auto;
   }
+
+  @media screen and (max-width:480px) {
+    width: 90%;
+  }
 }
 .app-cardHolder{
   min-height: 20vh;
@@ -153,7 +157,7 @@
     }
 
     @media screen and (max-width:480px) {
-      width: 90%;
+      width: 100%;
       margin: 0 auto;
 
       nav{
@@ -162,6 +166,10 @@
         }
       }
     }
+    
+  }
+
+  @media screen and (max-width:480px) {
     
   }
 }
@@ -180,8 +188,9 @@
 
   @media screen and (max-width:480px) {
     position: relative;
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
 }
 .app-emptyCart{
@@ -209,6 +218,14 @@
   p{
     margin-top: 15px;
     color: hsl(12, 20%, 44%);
+  }
+
+  @media screen and (max-width:480px) {
+    margin: 0 auto;
+
+    p{
+      font-size: 14px;
+    }
   }
 }
 .app-cartItems{
@@ -338,5 +355,9 @@
     font-size: 16px;
     background-color: hsl(14, 86%, 42%);
 
+  }
+
+  @media screen and (max-width:480px) {
+    margin: 0 auto;
   }
 }
