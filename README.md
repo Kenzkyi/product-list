@@ -14,7 +14,6 @@ This is a solution to the [Product list with cart challenge on Frontend Mentor](
   - [Continued development](#continued-development)
 - [Author](#author)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -37,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://product-list-seven-tau.vercel.app)
-- Live Site URL: [Add live site URL here](https://product-list-seven-tau.vercel.app)
+- Solution URL: [My solution URL ](https://product-list-seven-tau.vercel.app)
+- Live Site URL: [Live Site](https://product-list-seven-tau.vercel.app)
 
 ## My process
 
